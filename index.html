@@ -8,13 +8,13 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="container">
 
-        <ul>
+        <ul v-if="arrEmail.length === 10 ">
 
-            <li v-if="arrEmail.length === 10">
+            <li v-for="email in arrEmail">
 
-                {{mail}}
+            {{email}}
 
             </li>
 
